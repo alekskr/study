@@ -401,72 +401,74 @@ data = [-2, -10, 6, 19]
 #     print('{} получил зарплату {}, с вычетом налогов получил {}'.format(name_salary[0].upper(),
 #                                                                         name_salary[1], salary_with_tax))
 
+# A = int(input())
+# B = int(input())
+# H = int(input())
+#
+# if A <= H < B:
+#     print('Normal')
+# elif H < A:
+#     print('Deficiency')
+# else:
+# # if H > B:
+#     print('Excess')
 
-def damage_done():
-    return random.randint(5, 20)
+# x = float(input())
+# y = float(input())
+# if x > 0 and y > 0:
+#     print('I')
+# elif x > 0 and y < 0:
+#     print('IV')
+# elif x < 0 and y > 0:
+#     print('II')
+# else:
+#     print('III')
+
+# text = 'Nobody. expects? the, Spanish inquisition!'
+# print(text.replace('.', '').replace(',', '').replace('!', '').replace('?', ''))
+# list_puntuanions = ['.', ',', '!', '?']
+# for i in list_puntuanions:
+#     text = text.replace(i, '')
+# print(text.lower())
+#
+#
+# punc_replace = [(",", ""), (".", ""), ("!", ""), ("?", "")]
+# sentence = 'Nobody. expects? the, Spanish inquisition!'
+# for x, y in punc_replace:
+#     # print(x, y)
+#     sentence = sentence.replace(x, y)
+# print(sentence.lower())
+
+# text = 'fvfv hyh eddffv'
+# print(text.replace('', ' '))
 
 
-def attack(person1, person2):
-    damage_person = round(damage_done() / person2['armor'], 1)
-    person1['health'] = round(person1['health'] - damage_person, 1)
-    print('{} нанес урон {}, здоровье {} - {}'.format(person2['name'], damage_person, person1['name'],
-                                                      person1['health']))
+# names = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
+# digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+# nam_dig = dict(zip(digits, names))
+# print(nam_dig)
+# nam_dig = {'0': 'zero', '1': 'one', '2': 'two', '3': 'three', '4': 'four', '5': 'five', '6': 'six', '7': 'seven',
+#            '8': 'eight', '9': 'nine'}
+# number = input()
+# print(number)
+#
+# for i in number:
+#     for k, v in nam_dig.items():
+#         if i == k:
+#             print(v)
 
 
-def define_player(name, health=100, armor=1.2):
-    print(name, health, armor)
-    return {'name': name, 'health': health, 'armor': armor}
-
-
-def write_player_to_file(person):
-    with open(person['name'] + '.txt', 'w', encoding='UTF-8') as f:
-    # with open(person['name'], 'w', encoding='UTF-8') as f:
-        for k, v in person.items():
-            f.write('{} {}\n'.format(k, v))
-
-
-def player_by_filename(filename):
-    player = {}
-    file = str(filename) + '.txt'
-    with open(file, encoding='UTF-8') as f:
-        for line in f:
-            k, v = line.split()
-            if k == 'health':
-                v = int(v)
-            elif k == 'armor':
-                v = float(v)
-            player[k] = v
-    print(player)
-    return player
-
-
-def start_game():
-    hero = player_by_filename(name1)
-    enemy = player_by_filename(name2)
-    while True:
-        if hero['health'] > 0 and enemy['health'] > 0:
-            attack(hero, enemy)
-        if enemy['health'] > 0 and hero['health'] > 0:
-            attack(enemy, hero)
-        else:
-            break
-
-    if hero['health'] <= 0:
-        print('Enemy WIN!')
+def what_to_do(instructions):
+    # if 'Simon says' in instructions:
+    #     index = instructions.find('Simon says')
+    index = instructions.find('Simon says')
+    if instructions.startswith('Simon says'):
+        print('I', instructions[index:])
+    elif instructions.endswith('Simon says'):
+        print('I', instructions[:index+1])
     else:
-        print('Hero WIN!')
+        return "I won't do it!"
 
 
-# HERO = {'name': 'hero', 'health': 100, 'armor': 1.2}
-# ENEMY = {'name': 'enemy', 'health': 100, 'armor': 1.2}
-
-name1 = 'Hero'
-name2 = 'Enemy'
-
-player1_dict = define_player(name1)
-player2_dict = define_player(name2)
-
-write_player_to_file(player1_dict)
-write_player_to_file(player2_dict)
-
-start_game()
+instruction = input()
+what_to_do(instruction)
