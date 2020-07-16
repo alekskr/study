@@ -136,3 +136,6 @@ print(word.lstrip("ips"))  # "Mississippi"
 
 # "M", "i", "p", and "s" are removed from both sides, so nothing is left:
 print(word.strip("Mips"))  # ""
+
+string = "no clouds here to spy on pets"
+print(len(string))

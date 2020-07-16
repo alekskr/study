@@ -458,17 +458,34 @@ data = [-2, -10, 6, 19]
 #             print(v)
 
 
-def what_to_do(instructions):
-    # if 'Simon says' in instructions:
-    #     index = instructions.find('Simon says')
-    index = instructions.find('Simon says')
-    if instructions.startswith('Simon says'):
-        print('I', instructions[index:])
-    elif instructions.endswith('Simon says'):
-        print('I', instructions[:index+1])
-    else:
-        return "I won't do it!"
+# def what_to_do(instructions):
+#     if instructions.startswith('Simon says'):
+#         text = instructions.replace('Simon says', '')
+#         return 'I' + text
+#     elif instructions.endswith('Simon says'):
+#         index = instructions.find('Simon says')
+#         return 'I ' + instructions[:index-1]
+#     else:
+#         return "I won't do it!"
 
 
-instruction = input()
-what_to_do(instruction)
+# def what_to_do(instructions):
+#     if instructions.startswith('Simon says') or instructions.endswith('Simon says'):
+#         text = instructions.replace('Simon says', '').strip()
+#         return 'I ' + text
+#     return "I won't do it!"
+#
+#
+# instruction = 'make a wish Simon says'
+# # instruction = 'Simon says make a wish'
+# print(what_to_do(instruction))
+
+
+# string = "no clouds here to spy on pets"
+# print(len(string))
+#
+# for i in range(len(string)):
+#     for j in string:
+#         # if i == i + 5:
+#         print(j[i])
+
