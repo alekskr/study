@@ -1,5 +1,6 @@
-Sasha - 100000 
-Lena - 95000 
-Boris - 20000 
-Petr - 50000 
-Oleg - 80000 
+Oleg - 10000
+Olga - 20000
+Petr - 30000
+Masha - 40000
+Bob - 50000
+Ivan - 100000

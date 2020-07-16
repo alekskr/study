@@ -1,3 +1,0 @@
-name Enemy
-health 100
-armor 1.2
