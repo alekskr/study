@@ -481,11 +481,14 @@ data = [-2, -10, 6, 19]
 # print(what_to_do(instruction))
 
 
-# string = "no clouds here to spy on pets"
-# print(len(string))
-#
-# for i in range(len(string)):
-#     for j in string:
-#         # if i == i + 5:
-#         print(j[i])
+string = "no clouds here to spy on pets"
+print(len(string))
+print(set(string))
 
+a = 'a'
+string = ['j', 'a', 'v', 'a']
+for i in range(len(string)):
+    if string[i] == a:
+        print(i)
+
+print('{}{}'.format('Thanks for playing! \n', "We'll see how well you did in the next stage"))
