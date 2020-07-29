@@ -139,3 +139,6 @@ print(word.strip("Mips"))  # ""
 
 string = "no clouds here to spy on pets"
 print(len(string))
+
+print('cat', 'dog', 'bat')
+print('cat', 'dog', 'bat', sep=',')

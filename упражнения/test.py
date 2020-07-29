@@ -109,20 +109,29 @@
 # add_iris(0, 'Iris versicolor', 4.0, 1.3, petal_hue='pale lilac')
 
 
-people = {'Jackie': 176, 'Wilson': 185, 'Saersha': 165, 'Roman': 185, 'Abram': 169}
-
-
-def tallest_people(**kwargs):
-    names = []
-    max_value = max(kwargs.values())
-    print(max_value)
-    for k, v in kwargs.items():
-        if v == max_value:
-            names.append(k)
-            names.sort()
-    for name in names:
-        print('{} : {}'.format(name, max_value))
+# people = {'Jackie': 176, 'Wilson': 185, 'Saersha': 165, 'Roman': 185, 'Abram': 169}
+#
+#
+# def tallest_people(**kwargs):
+#     names = []
+#     max_value = max(kwargs.values())
+#     print(max_value)
+#     for k, v in kwargs.items():
+#         if v == max_value:
+#             names.append(k)
+#             names.sort()
+#     for name in names:
+#         print('{} : {}'.format(name, max_value))
 
 
 # print(tallest_people(Jackie=176, Wilson=185, Saersha=165, Roman=185, Abram=169))
-tallest_people(Jackie=176, Wilson=185, Saersha=165, Roman=185, Abram=169)
+# tallest_people(Jackie=176, Wilson=185, Saersha=165, Roman=185, Abram=169)
+
+
+# import sys
+# # while True:
+# print('Type exit to exit')
+# response = input()
+# if response == 'exit':
+#     sys.exit()
+# print('You typed ' + response + '.')
