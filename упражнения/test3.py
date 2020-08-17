@@ -494,10 +494,21 @@ data = [-2, -10, 6, 19]
 # print('{}{}'.format('Thanks for playing! \n', "We'll see how well you did in the next stage"))
 
 
-word = input().lower()
-print(word[:])
-print(word[::-1])
-if word[:] == word[::-1]:
-    print('Palindrome')
-else:
-    print('Not palindrome')
+# word = input().lower()
+# print(word[:])
+# print(word[::-1])
+# if word[:] == word[::-1]:
+#     print('Palindrome')
+# else:
+#     print('Not palindrome')
+
+
+parking = ['Audi', 'BMW', 'VW', 'Audi', 'Lada', 'VW']
+
+cars = {}
+for i in parking:
+    cars.setdefault(i, 0)
+    cars[i] = cars[i] + 1
+print(cars)
+for k, v in cars.items():
+    print(k, v)

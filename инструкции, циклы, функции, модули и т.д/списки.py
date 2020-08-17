@@ -164,3 +164,12 @@ print(' '.join(map(str, a)))
 numbers = ["77", "145", "987", "2095", "6", "371", "4999", "81"]
 numbers.sort()
 print(numbers)
+
+
+import copy
+
+a = [1, 2, 3, [100]]
+b = copy.deepcopy(a)
+b[3].append(200)
+print(a)
+print(b)

@@ -135,3 +135,166 @@
 # if response == 'exit':
 #     sys.exit()
 # print('You typed ' + response + '.')
+
+# import math
+# print(math.sqrt(4))
+#
+# from collections import Counter
+# parking = ['Audi', 'BMW', 'VW', 'Audi', 'Lada', 'VW']
+# brand = Counter(parking)
+#
+# print('\nКоличество элементов:', brand)
+#
+# print('\nКаждый элемент словаря на новой строке:')
+# for i in brand:
+#     print(i, brand[i])
+#
+# print('\nКоличество букв в определенном элементе:')
+# letters = Counter(parking[4])
+# print(letters)
+
+
+# a = -1
+# print(abs(a))
+
+import math
+
+# h = 5
+# r = 3
+# volume = math.pi * math.pow(r, 2) * h  # 141.3716...
+# print(round(volume, 1))  # 141.4
+#
+# a = abs(int(input()))
+# S = 2 * math.sqrt(3) * math.pow(a, 2)
+# V = 1 / 3 * math.sqrt(2) * math.pow(a, 3)
+# print(round(S, 2), round(V, 2))
+#
+# a = abs(int(input()))
+# b = int(input())
+# if b < 1:
+#     z = math.log(a)
+# else:
+#     z = math.log(a, b)
+# print(round(z, 2))
+#
+# r = 3.5
+# s = math.pi * math.pow(r, 2)
+# print(round(s, 2))
+# print(math.pi)
+
+# a = math.radians(float(input()))
+# a = float(input())
+# sin = math.sin(a)
+# cos = math.cos(a)
+# print(sin - cos)
+
+
+# def object_with_beautiful_identity():
+#     for i in range(10_000):
+#         # Change the next line
+#         if str(id(i))[-3:] == '888':
+#             print(i)
+#             return i
+#     return None
+#
+#
+# object_with_beautiful_identity()
+
+
+# one_ancestor = input()
+# other_ancestor = input()
+#
+# # Calculate the identity of a new alien here
+# new_alien = int((id(one_ancestor) + id(other_ancestor)) / 2)
+# print(new_alien)
+
+# a = 100
+# b = 100
+# c = 10000
+# d = 10000
+# a = [1, 2, 3]
+# b = [1, 2, 3]
+# print(a is b)
+# a = [2, 3, 9]
+# b = a
+# b[2] = 10
+# c = b
+#
+# print(a)
+# print(b)
+# print(c)
+# print(a is c)
+
+
+# def print_book_info(title, author=None, year=None):
+#     if author is None and year is not None:
+#         print('"{}" was written in {}'.format(title, year))
+#     elif year is None and author is not None:
+#         print('"{}" was written by {}'.format(title, author))
+#     elif author is None and year is None:
+#         print('"{}"'.format(title))
+#     else:
+#         print('"{}" was written by {} in {}'.format(title, author, year))
+
+# n = 1
+# for i in range(1, 365):
+#     n = n + i
+# print(n)
+
+# ghostbusters = {'Peter', 'Raymond', 'Egon'}
+# soldiers = {'Winston'}
+# secretaries = {'Janine'}
+#
+# ghostbusters |= soldiers
+# print(ghostbusters)
+# ghostbusters.update(secretaries)
+# print(ghostbusters)
+
+# numbers1 = {1, 2, 3, 4}
+# numbers2 = {0, 2, 3}
+# numbers1.intersection_update(numbers2)
+# print(numbers1)
+
+# a = set("my code is brOKen")
+# b = "i'm not OK with that"
+# c = a.union(b)
+# print(c)
+
+
+# n = abs(int(input()))
+i = []
+# my_list = [[1, 2] for i in range(n)]
+# print(my_list)
+
+# nums = [x * 2 for x in range(11) if x % 2 == 1]
+# print(nums)
+
+# a = ['123']
+# b = []
+# for i in a:
+#     for j in i:
+#         j = int(j)
+#         b.append(j)
+# print(sum(b)/len(b))
+#
+# a = '123'
+# # for i in a:
+# #     print(i)
+# a = input()
+# s = [float(i) for i in a]
+# print(sum(s) / len(s))
+
+a = '15325'
+# b = []
+# for i in a:
+#     b.append(int(i))
+b = [int(i) for i in a]
+print(b)
+c = []
+for i in range(len(b)):
+    if i == 0:
+        c.append(b[0])
+    else:
+        b[i] = sum(b[0:i])
+        c.append(b[i])
+print(c)
