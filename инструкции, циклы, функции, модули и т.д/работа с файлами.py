@@ -36,3 +36,20 @@ file.close()
 file = open('D:\\питон\\обучение\\инструкции, циклы, функции, модули и т.д\\ggg.txt', encoding='UTF-8')
 print(file.read())
 file.close()
+
+
+
+import csv
+with open("D:\\Python projects\\обучение\\1.csv", "w", encoding='utf-8') as w_file:
+    names = ["Name", "Age", "Height"]
+    file_writer = csv.DictWriter(w_file, delimiter=";", lineterminator="\n", fieldnames=names)
+    file_writer.writeheader()
+    file_writer.writerows([{"Name": "Alex", "Age": "23", "Height": "184"},
+                           {"Name": "Tom", "Age": "35", "Height": "170"},
+                           {"Name": "Tim", "Age": "21", "Height": "178"}])
+
+
+with open("D:\\Python projects\\обучение\\1.csv") as crime:
+    file_reader = csv.DictReader(crime, delimiter=";")
+    for line in file_reader:
+        print(line['Name'], line['Age'], line['Height'])

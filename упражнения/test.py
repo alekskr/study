@@ -1,3 +1,4 @@
+"""test"""
 # a = 5
 # b = 10
 #
@@ -157,7 +158,7 @@
 # a = -1
 # print(abs(a))
 
-import math
+# import math
 
 # h = 5
 # r = 3
@@ -263,6 +264,7 @@ import math
 
 # n = abs(int(input()))
 i = []
+
 # my_list = [[1, 2] for i in range(n)]
 # print(my_list)
 
@@ -284,17 +286,206 @@ i = []
 # s = [float(i) for i in a]
 # print(sum(s) / len(s))
 
-a = '15325'
+# a = '15325'
+# # a = input()
+# b = [int(i) for i in a]
+# c = []
+# for i, _ in enumerate(b):
+#     c.append(b[i] + sum(b[0:i]))
+# print(c)
+
+
+# students = [["Will", "B"], ["Kate", "B"], ["Max", "A"], ["Elsa", "C"], ["Alex", "B"], ["Chris", "A"]]
+# c = []
+# for i in students:
+#     if i[1] == 'A':
+#         c.append(i[0])
+# print(c)
+#
+# c = [i[0] for i in students if i[1] == 'A']
+# print(c)
+
+
+# text = [["Glitch", "is", "a", "minor", "problem", "that", "causes", "a", "temporary", "setback"],
+#         ["Ephemeral", "lasts", "one", "day", "only"],
+#         ["Accolade", "is", "an", "expression", "of", "praise"]]
+# text1 = []
+# for i in text:
+#     for j in i:
+#         text1.append(j)
+# print(text1)
+#
+# a = int(input())
 # b = []
-# for i in a:
-#     b.append(int(i))
-b = [int(i) for i in a]
-print(b)
-c = []
-for i in range(len(b)):
-    if i == 0:
-        c.append(b[0])
-    else:
-        b[i] = sum(b[0:i])
-        c.append(b[i])
-print(c)
+# for i in text1:
+#     if len(i) <= a:
+#         b.append(i)
+# print(b)
+#
+# t1 = [j for i in text for j in i]
+# t2 = [i for i in t1 if len(i) <= a]
+# print(t2)
+
+# symbol = input()
+# list1 = list(symbol[:3])
+# list2 = list(symbol[3:6])
+# list3 = list(symbol[6:])
+# field = [list1, list2, list3]
+# print(field)
+# # field = [['X', 'O', 'X'], ['O', 'X', 'O'], ['X', 'O', 'O']]
+# print('---------')
+# for line in field:
+#     print('|', line[0], line[1], line[2], '|')
+# print('---------')
+
+# import mymodule
+#
+# mymodule.hello()
+# print(mymodule.fib(10))
+
+# n = int(input())
+# summa = 0
+# for _ in range(n):
+#     a = int(input())
+#     summa += a
+# print(summa / n)
+
+
+# n = int(input())
+# if n == 1:
+#     print('This number is not prime')
+# else:
+#     for i in range(2, n):
+#         if n % i == 0:
+#             print('This number is not prime')
+#             break
+#     else:
+#         print('This number is prime')
+
+
+# for i in range(10):
+#     line = "*"
+#     for j in range(10):
+#         if i == j:
+#             break
+#         line = line + "{}".format(j)
+#     print(line)
+
+# import datetime
+#
+# some_date = datetime.datetime(3486, 5, 15, 23, 59)
+# print(some_date.time())
+# print((some_date.date()))
+
+###
+# import random
+# import string
+#
+#
+# def password_generator(length):
+#     chars = string.ascii_letters + string.digits
+#     exep = ('O', '0', 'l', '1')
+#     password = ''
+#     while len(password) != length:
+#         char = random.choice(chars)
+#         if char not in exep:
+#             password = password + char
+#     return password
+#
+#
+# print(password_generator(10))
+
+# pasta = "tomato, basil, garlic, salt, pasta, olive oil"
+# apple_pie = "apple, sugar, salt, cinnamon, flour, egg, butter"
+# ratatouille = "aubergine, carrot, onion, tomato, garlic, olive oil, pepper, salt"
+# chocolate_cake = "chocolate, sugar, salt, flour, coffee, butter"
+# omelette = "egg, milk, bacon, tomato, salt, pepper"
+#
+# ingr = input()
+# dishes = {pasta: 'pasta', apple_pie: 'apple pie', ratatouille: 'ratatouille', chocolate_cake: 'chocolate cake',
+#           omelette: 'omelette'}
+# for k, v in dishes.items():
+#     if ingr in k:
+#         print(f'{v} time!')
+
+
+# def fahrenheit_to_celsius(temps_f):
+#     temps_c = (temps_f - 32) * 5 / 9
+#     return round(temps_c, 2)
+#
+#
+# def celsius_to_fahrenheit(temps_c):
+#     temps_f = temps_c * 9 / 5 + 32
+#     return round(temps_f, 2)
+#
+#
+# def main():
+#     """Entry point of the program."""
+#     temperature, unit = input().split()
+#     if unit in ('c', 'C'):
+#         print(celsius_to_fahrenheit(float(temperature)), 'F')
+#     else:
+#         print(fahrenheit_to_celsius(float(temperature)), 'C')
+#
+#
+# main()
+
+
+# def sq_sum(*args):
+#     a = []
+#     for i in args:
+#         sq = i * i
+#         a.append(sq)
+#     return sum(a)
+#
+#
+# print(sq_sum(1, 2, 2, 4))
+
+
+# a = int(input())
+# b = int(input())
+# c = [i for i in range(a, b + 1) if i % 3 == 0]
+# print(sum(c) / len(c))
+
+
+# def check_list(lst):
+#     return lst and lst[0]
+#
+#
+# lists = [[5, 9], [0, 0], []]
+# result = []
+# for lst in lists:
+#     result.append(check_list(lst))
+#
+# print(result)
+# print(5 or 0)
+# print(0 or 5)
+
+
+# def compare(numerator, denominator):
+#     return bool(denominator) and numerator / denominator == 0.5
+#
+#
+# a = int(input())
+# b = int(input())
+#
+# print(compare(a, b))
+
+
+# import math
+#
+# def sigma_func(x):
+#     return math.exp(x) / (math.exp(x) + 1)
+#
+#
+# a = int(input())
+# print(round(sigma_func(a), 2))
+
+# a = ['ONE', 'TWO', 'THREE']
+# b = ['one', 'two', 'three']
+# c = dict(zip(a, b))
+# print(c)
+# with open('D:\\Python projects\\обучение\\1.csv', 'w') as f:
+#     for k, v in c.items():
+#         f.write('{}{}'.format(k, v))
+

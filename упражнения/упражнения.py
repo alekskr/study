@@ -164,12 +164,21 @@ print('*** конец задачи 1 ***' + '\n')
 #         return True
 #
 #
-# print('Введите число - ', end='')
 # num1 = int(input())
-# # num1 = random.randint(0, 100)
-# print(num1)
 # print(is_prime(num1))
-# # is_prime(num1)
+#
+# или второй вариант:
+# n = int(input())
+# if n == 1:
+#     print('This number is not prime')
+# else:
+#     for i in range(2, n):
+#         if n % i == 0:
+#             print('This number is not prime')
+#             break
+#     else:
+#         print('This number is prime')
+
 # print('*** Конец задачи 8 ***' + '\n')
 #
 #
@@ -250,6 +259,7 @@ print('*** Конец задачи 12 ***' + '\n')
 # возвращает наименьшее целое число y, такое что:
 # у больше или равно х,
 # у делится на 5.
+print('*** задача 13 ***' + '\n')
 
 
 def closest_mod_5(x):
@@ -258,11 +268,12 @@ def closest_mod_5(x):
     return x + (5 - x % 5)
 
 
-print('*** задача 13 ***' + '\n')
+print('*** конец задачи 13 ***' + '\n')
 
 # задача 14. write a function that selects from the given list people older than 30, interested in art, and living
 # in Berlin. The function should return their names as a string, separated by a comma and a space, e.g. "Maria, Daniel"
 # for the example.
+print('*** задача 14 ***' + '\n')
 
 
 def select_dates(pers_data):
@@ -285,5 +296,25 @@ potential_dates = [{"name": "Julia", "gender": "female", "age": 29,
                     "hobbies": ["reading", "alpinism", "museums"], "city": "Munich"}]
 select_dates(potential_dates)
 
-print('*** задача 14 ***' + '\n')
+print('*** конец задачи 14 ***' + '\n')
 
+
+# задача 15. Генератор паролей
+print('*** задача 15 ***' + '\n')
+import random
+import string
+
+
+def password_generator(length):
+    chars = string.ascii_letters + string.digits
+    exep = ('O', '0', 'l', '1')
+    password = ''
+    while len(password) != length:
+        char = random.choice(chars)
+        if char not in exep:
+            password = password + char
+    return password
+
+
+print(password_generator(10))
+print('*** конец задачи 15 ***' + '\n')

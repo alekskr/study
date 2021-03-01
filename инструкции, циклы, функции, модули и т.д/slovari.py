@@ -60,25 +60,60 @@
 # print(human)
 
 # Вложенные словари и списки
-all_guests = {'Alice': {'apples': 5, 'oranges': 3}, 'Bob': {'burgers': 8, 'apples': 4},
-              'John': {'beers': 3, 'orange': 1}}
+# all_guests = {'Alice': {'apples': 5, 'oranges': 3}, 'Bob': {'burgers': 8, 'apples': 4},
+#               'John': {'beers': 3, 'orange': 1}}
+#
+#
+# def total_things(guests, thing):
+#     num_brought = 0
+#     for k, v in guests.items():
+#         num_brought = num_brought + v.get(thing, 0)
+#     return num_brought
+#
+#
+# print('Принесенные предметы:')
+# print('Apples:', total_things(all_guests, 'apples'))
+# print('Oranges:', total_things(all_guests, 'oranges'))
+# print('Burgers:', total_things(all_guests, 'burgers'))
+# print('Beers:', total_things(all_guests, 'beers'))
+# print('Cups:', total_things(all_guests, 'cups'))
+# print('Bananas:', total_things(all_guests, 'bananas'))
+#
+# spam = {'name': 'Pooka', 'age': 5}
+# spam.setdefault('color', 'black')
+# print(spam)
+
+###
+first_family = {"wife": "Janet", "wife's mother": "Katie", "wife's father": "George"}
+second_family = {"husband": "Leon", "husband's mother": "Eva", "husband's father": "Gaspard",
+                 "husband's sister": "Isabelle"}
+big_family = {}
+big_family.update(first_family)
+big_family.update(second_family)
+print(len(first_family))
+
+import json
+# with open('qweqwrqrq.json', 'r') as json_file:
+#     ddddd = json.load(json_file)
+#
+# print(ddddd)
+
+with open('qweqwrqrq.json', 'r') as json_file:
+    users_dict = json.load(json_file)
+
+print(len(users_dict['users']))
+for v in users_dict.values():
+    print(len(v))
+print(len(users_dict))
 
 
-def total_things(guests, thing):
-    num_brought = 0
-    for k, v in guests.items():
-        num_brought = num_brought + v.get(thing, 0)
-    return num_brought
-
-
-print('Принесенные предметы:')
-print('Apples:', total_things(all_guests, 'apples'))
-print('Oranges:', total_things(all_guests, 'oranges'))
-print('Burgers:', total_things(all_guests, 'burgers'))
-print('Beers:', total_things(all_guests, 'beers'))
-print('Cups:', total_things(all_guests, 'cups'))
-print('Bananas:', total_things(all_guests, 'bananas'))
-
-spam = {'name': 'Pooka', 'age': 5}
-spam.setdefault('color', 'black')
-print(spam)
+# squares = {1: 1, 3: 9, 5: 25, 6: 36, 8: 64, 10: 100, 11: 121, 15: 225}
+# x = int(input())
+# for k, v in squares.items():
+#     if x == k:
+#         squares.pop(k)
+#         print(v)
+#         break
+# else:
+#     print('There is no such key')
+# print(squares)

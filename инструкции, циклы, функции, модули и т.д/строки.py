@@ -142,3 +142,20 @@ print(len(string))
 
 print('cat', 'dog', 'bat')
 print('cat', 'dog', 'bat', sep=',')
+
+dictionary = ['all', 'an', 'and', 'as', 'closely', 'correct', 'equivocal',
+              'examine', 'indication', 'is', 'means', 'minutely', 'or', 'scrutinize',
+              'sign', 'the', 'to', 'uncertain']
+
+a = 'rutinize is to examene closely and minutely'.split()
+print(a)
+b = []
+for i in a:
+    if i not in dictionary:
+        b.append(i)
+print(b)
+if not b:
+    print('OK')
+else:
+    for i in b:
+        print(i)
