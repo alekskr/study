@@ -489,3 +489,20 @@ i = []
 #     for k, v in c.items():
 #         f.write('{}{}'.format(k, v))
 
+import copy
+
+def detect_copy():
+    copy_obj = copying_machine(obj)
+    if obj[0] is copy_obj[0]:
+        print(id(obj), id(copy_obj))
+        return 'shallow copy'
+    return 'deep copy'
+
+def copying_machine(obj):
+    a = copy.deepcopy(obj)
+    print(id(a[0]))
+    return a
+
+obj = [[1, 2], [3, 4]]
+print(id(obj[0]))
+print(detect_copy())
