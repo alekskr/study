@@ -1,0 +1,12 @@
+id;title;price
+1;"Acer Aspire 5 A515-54G-502N Pure Silver";10.999
+2;"Asus ROG Strix G15 G512LI-HN057 Black";
+3;"HP Pavilion Gaming Black СУПЕРЦЕНА!!!";7.1234567
+4;"HP Pavilion Notebook 15-cw1011ua (8RW14EA) Mineral Silver";25
+5;"Acer Aspire 7 A715-41G-R7MZ Charcoal Black";35
+6;"Dell Inspire 3582 Black";5
+7;"Apple MacBook Air 13";11
+8;"Asus ROG Strix G15 G512LI-HN094";16
+9;"HP Pavilion Notebook 15-cw1002ua (7KE554EA) СУПЕРЦЕНА!!!";15
+10;"HP Pavilion Notebook 15-cw1005ua (7ZF75EA) СУПЕРЦЕНА!!!";
+11;"Lenovo IdeaPad L340-15IRH Gaming (81LK01HCRA) Granite Black";10

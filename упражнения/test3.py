@@ -503,12 +503,16 @@ data = [-2, -10, 6, 19]
 #     print('Not palindrome')
 
 
-parking = ['Audi', 'BMW', 'VW', 'Audi', 'Lada', 'VW']
+# parking = ['Audi', 'BMW', 'VW', 'Audi', 'Lada', 'VW']
+#
+# cars = {}
+# for i in parking:
+#     cars.setdefault(i, 0)
+#     cars[i] = cars[i] + 1
+# print(cars)
+# for k, v in cars.items():
+#     print(k, v)
 
-cars = {}
-for i in parking:
-    cars.setdefault(i, 0)
-    cars[i] = cars[i] + 1
-print(cars)
-for k, v in cars.items():
-    print(k, v)
+with open('log1.txt', encoding='utf-8') as f:
+    for line in f:
+        print(line.strip())

@@ -489,12 +489,76 @@ i = []
 #     for k, v in c.items():
 #         f.write('{}{}'.format(k, v))
 
-import subprocess
+# import subprocess
+# book = 'C:\\Users\\alexk\\Desktop\\1.txt'
+# program = 'notepad.exe'
+# subprocess.Popen([program, book]).wait()
+#
+# print('ok')
 
 
-import subprocess
-book = 'C:\\Users\\alexk\\Desktop\\1.txt'
-program = 'notepad.exe'
-subprocess.Popen([program, book]).wait()
+# import os
+#
+# class LogReader:
+#     def __init__(self):
+#         self.files = []
+#         self.i = -1
+#
+#         for file in os.listdir():
+#             if os.path.isdir(file):
+#                 continue
+#             if file.endswith('txt'):
+#                 print(file)
+#                 with open(file, encoding='UTF-8') as f:
+#                     for line in f:
+#                         print(line.strip())
+#                         self.files.append(line.strip())
+#         print(self.files)
+#
+#     def __iter__(self):
+#         return self
+#
+#     def __next__(self):
+#         while self.i < len(self.files) - 1:
+#             self.i += 1
+#             return self.files[self.i]
+#         raise StopIteration
+#
+#
+# log_reader = LogReader()
+# for i in log_reader:
+#     print(i)
 
-print('ok')
+my_dict = {}
+for i in range(5):
+    my_dict[f'key{i}'] = [f'value{j}' for j in range(3)]
+print(my_dict)
+
+
+a = 'Hello!'
+print('-'.join(a))
+
+my_dict = {}
+
+for i in range(5):
+    my_dict[f'key_{i}'] = [f'value_{n}' for n in range(2)]
+print(my_dict)
+
+names = ['Ivan', 'Oleg', 'Sosed', 'Bob']
+ages = (35, 45, 80)
+for n in zip(names, ages):
+    print(list(n))
+
+children = {'Alice': 'artist', 'Bob': 'driver', 'Dan': 'programmer'}
+ages = [5, 9, 14]
+
+for child, age in zip(children, ages):
+    children[child] = {'profession': children[child], 'age': age}
+print(children)
+
+# a = [0] + [1]
+# b = [1] + [0]
+# print(f'{a}\n{b}')
+row = [1, 1]
+row = [sum(x) for x in list(zip([0] + row, row + [0]))]
+print(row)
