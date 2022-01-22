@@ -534,7 +534,6 @@ for i in range(5):
     my_dict[f'key{i}'] = [f'value{j}' for j in range(3)]
 print(my_dict)
 
-
 a = 'Hello!'
 print('-'.join(a))
 
@@ -562,3 +561,17 @@ print(children)
 row = [1, 1]
 row = [sum(x) for x in list(zip([0] + row, row + [0]))]
 print(row)
+
+print('*' * 25)
+
+# def generate_band(city, pet):
+#     print(f'Your band name could be - {city.capitalize()} {pet.capitalize()}')
+#
+# print('*' * 25)
+
+# a = float(input('Welcome to the tip calculator\nWhat was the total bill? $'))
+# b = int(input('How many people to split the bill? '))
+# c = int(input('What percentage tip would you like to give? 10, 12 or 15? '))
+# print(f'Each person should pay {((a + a * c / 100) / b):.2f}')
+# print('*' * 25)
+

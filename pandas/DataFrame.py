@@ -162,3 +162,7 @@ print(df)
 df = pd.get_dummies(list(range(1, 4)))
 print(df)
 
+
+df = pd.read_csv('D:\Python projects\Jupyter Notebook\Pandas\price1.txt', sep=';')
+print(df)
+
