@@ -37,7 +37,7 @@ class LogReader:
         self.i = 0  # счетчик файлов
         # print(os.listdir('D:\\Python projects\\обучение\\упражнения'))
 
-        for file in os.listdir('D:\\Python projects\\обучение\\упражнения\\'):  # получаем список всех файлов и папок
+        for file in os.listdir('/\\'):  # получаем список всех файлов и папок
             file_name = 'D:\\Python projects\\обучение\\упражнения\\' + file
             if os.path.isdir(file_name):  # если сейчас итерируемое это папка, то continue
                 continue
