@@ -1,0 +1,19 @@
+[
+    {
+      "auto": "skoda",
+      "model": "rapid",
+      "transmission": "robot",
+      "engine_volume": "1.4l"
+    },
+    {
+      "auto": "volvo",
+      "model": "xc90",
+      "transmission": "auto",
+      "engine_volume": "2l"
+    },
+    {
+      "auto": "renault",
+      "model": "duster",
+      "transmission": "manual",
+      "engine_volume": "2l"
+    }]

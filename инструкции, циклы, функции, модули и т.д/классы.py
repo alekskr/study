@@ -173,14 +173,16 @@
 # deposit.add_money(500, 500)
 # print(deposit.dollars, deposit.cents)
 
-import random
-pin = random.randint(0000, 1111)
-print(len(str(pin)))
-if len(str(pin)) == 1:
-    pin = '000' + str(pin)
-elif len(str(pin)) == 2:
-    pin = '00' + str(pin)
-elif len(str(pin)) == 3:
-    pin = '0' + str(pin)
-print(pin)
-print(type(pin))
+class Coffee:
+    roast = "medium"
+    kind = "beans"
+
+    def __init__(self, sort, variety):
+        self.sort = sort
+        self.variety = variety
+        self.caffeine = '0'
+        self.cup = sort + variety + self.caffeine + Coffee.roast + Coffee.kind
+
+
+newcup = Coffee(input(), input())
+print(newcup.cup)

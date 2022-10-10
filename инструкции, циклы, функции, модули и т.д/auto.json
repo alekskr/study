@@ -1,0 +1,51 @@
+[
+    {
+        "auto": "Skoda",
+        "model": "Rapid",
+        "transmission": "robot",
+        "engine_volume": "1.4l"
+    },
+    {
+        "auto": "Volvo",
+        "model": "Xc90",
+        "transmission": "auto",
+        "engine_volume": "2l"
+    },
+    {
+        "auto": "Renault",
+        "model": "Duster",
+        "transmission": "manual",
+        "engine_volume": "2l"
+    },
+    {
+        "auto": "Kia",
+        "model": "Rio",
+        "transmission": "manual",
+        "engine_volume": "1.4"
+    },
+    {
+        "auto": "Opel",
+        "model": "Astra",
+        "transmission": "manual",
+        "engine_volume": "1.6"
+    },
+    {
+        "auto": "Kia",
+        "model": "Sportage",
+        "transmission": "auto",
+        "engine_volume": "2.5"
+    },
+    {
+        "auto": "\u041d\u0438\u0441\u0441\u0430\u043d",
+        "model": "\u043b\u0438\u0444",
+        "transmission": "\u0430\u0432\u0442\u043e",
+        "engine": "\u044d\u043b\u0435\u043a\u0442\u0440\u043e",
+        "engine_volume": "-"
+    },
+        {
+        "auto": "Kia",
+        "model": "Ceed",
+        "transmission": "manual",
+        "engine_volume": "1.6"
+    }
+]
