@@ -1,6 +1,6 @@
-var word = "bottles";
+let word = "bottles";
 
-var count = 99;
+let count = 99;
 
 while (count > 0) {
     console.log(count + " " + word + " of beer on the wall");
@@ -11,7 +11,7 @@ while (count > 0) {
     document.write("Take one down, pass it around,<br>");
     count = count - 1;
     if (count == 1) {
-        var word = "bottle";
+        let word = "bottle";
     }
     if (count > 0) {
         console.log(count + " " + word + " of beer on the wall.");
